@@ -1,0 +1,985 @@
+/* ========================================================
+   LANDING PAGE - SECTION 1: HERO / HOOK
+   Mobile-First (Max Content Width: 450px)
+   Color Palette:
+   - Neem Green: #3F6B45
+   - Terracotta: #C2562B
+   - Cream / Off-White: #F6F4EA
+   - Dark Slate / Forest: #1E281F
+   ======================================================== */
+
+:root {
+  --bg-cream: #F6F4EA;
+  --neem-green: #3F6B45;
+  --neem-green-dark: #2B4E31;
+  --neem-green-soft: #E8F0EA;
+  --terracotta: #C2562B;
+  --terracotta-dark: #9E3F1A;
+  --terracotta-soft: #F9EBE5;
+  --golden-accent: #FFD152;
+  --text-dark: #1E281F;
+  --text-muted: #4B584E;
+  --white: #FFFFFF;
+  --card-border: #FFFFFF;
+  --shadow-badge: 0 8px 24px rgba(43, 78, 49, 0.28);
+  --shadow-card: 0 6px 18px rgba(0, 0, 0, 0.12);
+  --shadow-btn: 0 8px 22px rgba(194, 86, 43, 0.4);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: 'Hind', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #E2DFD2;
+  color: var(--text-dark);
+  line-height: 1.4;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0;
+}
+
+/* ========================================================
+   MOBILE-FIRST CONTAINER (Max Width 450px)
+   ======================================================== */
+.mobile-container {
+  width: 100%;
+  max-width: 450px;
+  background-color: var(--bg-cream);
+  min-height: 100vh;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.hero-hook-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: var(--bg-cream);
+}
+
+/* ========================================================
+   TOP PHOTO: Real Natural Indian Couple
+   Balanced height & proper framing so faces/gestures are prominent
+   ======================================================== */
+.hero-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 470px;
+  overflow: hidden;
+  background-color: #E6E2D4;
+}
+
+.hero-main-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 32%;
+  display: block;
+}
+
+/* Soft natural fade at the bottom of the photo into cream bg */
+.hero-gradient-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: linear-gradient(180deg, rgba(246, 244, 234, 0) 0%, rgba(246, 244, 234, 0.75) 65%, var(--bg-cream) 100%);
+  pointer-events: none;
+}
+
+/* ========================================================
+   CENTER BADGE: Perfectly Proportioned Rounded Headline
+   Matches Reference Poster Layout
+   ======================================================== */
+.center-hook-badge-container {
+  position: relative;
+  margin-top: -45px;
+  padding: 0 16px;
+  z-index: 10;
+}
+
+.curved-hook-badge {
+  background: linear-gradient(180deg, #375F3D 0%, #294A2E 100%);
+  border: 3px solid var(--golden-accent);
+  border-radius: 26px;
+  padding: 14px 14px 12px 14px;
+  text-align: center;
+  box-shadow: var(--shadow-badge);
+}
+
+.hook-line-white {
+  font-family: 'Hind', sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  color: var(--white);
+  display: block;
+  line-height: 1.25;
+  letter-spacing: 0.2px;
+}
+
+.hook-line-contrast {
+  font-family: 'Hind', sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--golden-accent);
+  line-height: 1.15;
+  margin: 2px 0;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  letter-spacing: -0.4px;
+}
+
+/* ========================================================
+   SUB-HOOK WITH DIVIDER LINES
+   Fully visible, no cutting off
+   ======================================================== */
+.sub-hook-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 18px 12px 18px;
+}
+
+.divider-line-left,
+.divider-line-right {
+  flex: 1;
+  height: 1.5px;
+  background: linear-gradient(90deg, rgba(63, 107, 69, 0.1) 0%, var(--neem-green) 100%);
+  border-radius: 2px;
+}
+
+.divider-line-right {
+  background: linear-gradient(90deg, var(--neem-green) 0%, rgba(63, 107, 69, 0.1) 100%);
+}
+
+.sub-hook-text {
+  flex: 10;
+  font-family: 'Hind', sans-serif;
+  font-size: 14.5px;
+  font-weight: 600;
+  line-height: 1.45;
+  text-align: center;
+  color: var(--text-dark);
+}
+
+.hl-accent {
+  color: var(--terracotta);
+  font-weight: 800;
+}
+
+/* ========================================================
+   3 VERTICAL ROUNDED CARDS (Reference Image Style)
+   ======================================================== */
+.problem-cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 6px 14px 18px 14px;
+}
+
+.problem-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s ease;
+}
+
+.card-left {
+  transform: rotate(-1.5deg);
+}
+
+.card-center {
+  transform: translateY(-3px);
+}
+
+.card-right {
+  transform: rotate(1.5deg);
+}
+
+.problem-card:hover {
+  transform: translateY(-5px) scale(1.02);
+}
+
+.card-image-box {
+  width: 100%;
+  height: 135px;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  border: 3.5px solid var(--card-border);
+  box-shadow: var(--shadow-card);
+  background-color: #EAE6D8;
+}
+
+.card-thumb-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card-tag {
+  margin-top: 8px;
+  background-color: var(--neem-green);
+  color: var(--white);
+  font-size: 13.5px;
+  font-weight: 800;
+  padding: 6px 4px;
+  border-radius: 9px;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.16);
+  white-space: nowrap;
+  width: 100%;
+  letter-spacing: -0.2px;
+}
+
+.tag-terracotta {
+  background-color: var(--terracotta);
+}
+
+/* ========================================================
+   SECTION 2: समस्या को समझें (Timeline Infographic Layout)
+   Extra Large Images (106px), 21px Bold Text & Staggered Reveal Animation
+   ======================================================== */
+.section-understand-problems {
+  padding: 34px 12px 34px 12px;
+  background-color: var(--bg-cream);
+  overflow: hidden;
+}
+
+.sec-header-box {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sec-badge {
+  display: inline-block;
+  background-color: rgba(63, 107, 69, 0.14);
+  color: var(--neem-green-dark);
+  font-size: 15px;
+  font-weight: 800;
+  padding: 6px 22px;
+  border-radius: 24px;
+  letter-spacing: 0.4px;
+  margin-bottom: 12px;
+  border: 1.5px solid rgba(63, 107, 69, 0.32);
+  box-shadow: 0 2px 8px rgba(63, 107, 69, 0.08);
+}
+
+.sec-main-title {
+  font-family: 'Hind', sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  color: var(--text-dark);
+  line-height: 1.25;
+  margin-bottom: 12px;
+  letter-spacing: -0.4px;
+}
+
+.title-underline {
+  width: 70px;
+  height: 5px;
+  background: linear-gradient(90deg, var(--neem-green) 0%, var(--terracotta) 100%);
+  margin: 0 auto;
+  border-radius: 3px;
+}
+
+/* Timeline Vertical Container */
+.timeline-infographic {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  padding: 10px 0 22px 0;
+}
+
+/* Continuous Vertical Spine Line */
+.timeline-vertical-spine {
+  position: absolute;
+  left: 53px;
+  top: 50px;
+  bottom: 50px;
+  width: 4px;
+  background: linear-gradient(180deg, var(--neem-green) 0%, #C4BDAC 50%, var(--terracotta) 100%);
+  z-index: 1;
+  transform-origin: top;
+  transition: transform 1.2s ease;
+}
+
+/* Individual Timeline Step Item - STAGGERED REVEAL ANIMATION ("एक-एक कर के आए") */
+.timeline-step-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+  z-index: 2;
+  opacity: 0;
+  transform: translateY(40px) scale(0.92);
+  transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+/* When active/visible */
+.timeline-step-item.is-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.timeline-step-item:hover {
+  transform: translateX(4px) scale(1.01);
+}
+
+/* Left Node Column (Circular Image + STEP Tag) - 106px HUGE & CRISP */
+.timeline-node-col {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 108px;
+  flex-shrink: 0;
+}
+
+.circle-node {
+  width: 106px;
+  height: 106px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4.5px solid var(--neem-green);
+  background-color: var(--white);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  flex-shrink: 0;
+  position: relative;
+  transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+}
+
+.timeline-step-item:hover .circle-node {
+  transform: scale(1.06);
+  box-shadow: 0 10px 28px rgba(63, 107, 69, 0.35);
+  border-color: var(--terracotta);
+}
+
+.node-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.45s ease;
+}
+
+.timeline-step-item:hover .node-photo {
+  transform: scale(1.1);
+}
+
+/* Step Pointer Tag (STEP 01, 02...) - EXTRA PROMINENT */
+.step-pointer-tag {
+  position: absolute;
+  right: -9px;
+  background: var(--neem-green);
+  color: var(--white);
+  padding: 5px 7px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  z-index: 4;
+  transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+.step-pointer-tag::after {
+  content: '';
+  position: absolute;
+  right: -6px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-left: 6px solid var(--neem-green);
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  transition: border-left-color 0.25s ease;
+}
+
+.step-pointer-tag.tag-terracotta {
+  background: var(--terracotta);
+}
+
+.step-pointer-tag.tag-terracotta::after {
+  border-left-color: var(--terracotta);
+}
+
+.timeline-step-item:hover .step-pointer-tag {
+  transform: scale(1.15) translateX(3px);
+}
+
+.tag-lbl {
+  font-size: 9px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 0.4px;
+  opacity: 0.95;
+}
+
+.tag-num {
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+/* Right Content Card - 21px BOLD TEXT FILLING THE CARD */
+.timeline-content-card {
+  flex: 1;
+  background: var(--white);
+  border-radius: 20px;
+  padding: 20px 18px 20px 16px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+  border: 1.5px solid #E2DCCF;
+  min-height: 98px;
+  transition: all 0.3s ease;
+}
+
+.timeline-step-item:hover .timeline-content-card {
+  box-shadow: 0 10px 28px rgba(63, 107, 69, 0.18);
+  border-color: rgba(63, 107, 69, 0.4);
+  transform: translateY(-2px);
+}
+
+.content-bar {
+  width: 6px;
+  height: 52px;
+  border-radius: 4px;
+  flex-shrink: 0;
+  transition: height 0.3s ease;
+}
+
+.timeline-step-item:hover .content-bar {
+  height: 60px;
+}
+
+.bar-green {
+  background-color: var(--neem-green);
+}
+
+.bar-terracotta {
+  background-color: var(--terracotta);
+}
+
+.problem-exact-text {
+  font-family: 'Hind', sans-serif;
+  font-size: 21px;
+  font-weight: 800;
+  color: var(--text-dark);
+  line-height: 1.35;
+  margin: 0;
+  letter-spacing: -0.3px;
+}
+
+/* Problem Advice Box (Exact Content) - EXTRA PROMINENT */
+.problem-alert-callout {
+  background: linear-gradient(135deg, #FFF7F2 0%, #FAEDE7 100%);
+  border-left: 6px solid var(--terracotta);
+  border-radius: 18px;
+  padding: 22px 24px;
+  margin-top: 26px;
+  text-align: center;
+  box-shadow: 0 6px 24px rgba(194, 86, 43, 0.18);
+  border-top: 1px solid rgba(194, 86, 43, 0.2);
+  border-right: 1px solid rgba(194, 86, 43, 0.2);
+  border-bottom: 1px solid rgba(194, 86, 43, 0.2);
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.problem-alert-callout.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.alert-exact-text {
+  font-family: 'Hind', sans-serif;
+  font-size: 19px;
+  font-weight: 800;
+  color: var(--terracotta-dark);
+  line-height: 1.45;
+  margin: 0;
+  letter-spacing: -0.3px;
+}
+
+/* ========================================================
+   SECTION 3: DentalCare Capsule Showcase
+   Angular Color Block + 3D Product Podium Stage
+   ======================================================== */
+.section-product-showcase {
+  padding: 38px 14px 40px 14px;
+  background-color: var(--bg-cream);
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid rgba(63, 107, 69, 0.15);
+}
+
+.product-header-box {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.product-brand-tag {
+  display: inline-block;
+  background-color: rgba(194, 86, 43, 0.12);
+  color: var(--terracotta);
+  font-size: 13.5px;
+  font-weight: 800;
+  padding: 5px 16px;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(194, 86, 43, 0.25);
+}
+
+.product-main-title {
+  font-family: 'Hind', sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--text-dark);
+  line-height: 1.25;
+  margin-bottom: 10px;
+  letter-spacing: -0.3px;
+}
+
+.product-title-underline {
+  width: 64px;
+  height: 4.5px;
+  background: linear-gradient(90deg, var(--neem-green) 0%, var(--terracotta) 100%);
+  margin: 0 auto;
+  border-radius: 3px;
+}
+
+/* Angular Podium Stage Container */
+.product-stage-container {
+  position: relative;
+  width: 100%;
+  height: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0 24px 0;
+}
+
+/* Angled Diagonal Geometric Color Slice (Reference Image Style) */
+.stage-angled-bg {
+  position: absolute;
+  bottom: 0;
+  left: -20px;
+  right: -20px;
+  height: 180px;
+  background: linear-gradient(135deg, #375F3D 0%, #294A2E 100%);
+  clip-path: polygon(0 45%, 100% 0%, 100% 100%, 0% 100%);
+  z-index: 1;
+}
+
+/* 3D Visual Stage */
+.product-visual-stage {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-img-wrapper {
+  width: 250px;
+  height: 270px;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.25);
+  border: 4.5px solid var(--white);
+  background: var(--white);
+  position: relative;
+  z-index: 3;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.product-img-wrapper:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 20px 42px rgba(0, 0, 0, 0.3);
+}
+
+.product-hero-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* 3D Circular Pedestal Stand (Reference Image Style) */
+.podium-pedestal-base {
+  position: relative;
+  width: 270px;
+  height: 32px;
+  margin-top: -16px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pedestal-disc {
+  border-radius: 50%;
+  background: linear-gradient(180deg, #FDFDFD 0%, #E2DDD0 100%);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.disc-top {
+  width: 240px;
+  height: 18px;
+}
+
+.disc-bottom {
+  width: 270px;
+  height: 20px;
+  margin-top: -8px;
+  background: linear-gradient(180deg, #ECE7DB 0%, #C9C4B5 100%);
+}
+
+/* Product Description & Features */
+.product-details-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.product-lead-desc {
+  background: var(--white);
+  border-radius: 18px;
+  padding: 18px 20px;
+  font-family: 'Hind', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text-dark);
+  line-height: 1.45;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  border-left: 5px solid var(--neem-green);
+  border-top: 1px solid #ECE7D8;
+  border-right: 1px solid #ECE7D8;
+  border-bottom: 1px solid #ECE7D8;
+}
+
+/* 3 Feature Items */
+.product-features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.feature-item {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 16px 18px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+  border: 1.5px solid #EAE5D7;
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.feature-item:hover {
+  transform: translateX(4px);
+  border-color: var(--neem-green);
+  box-shadow: 0 6px 18px rgba(63, 107, 69, 0.12);
+}
+
+.feature-icon-wrapper {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform 0.25s ease;
+}
+
+.feature-item:hover .feature-icon-wrapper {
+  transform: scale(1.08);
+}
+
+.feature-icon-wrapper svg {
+  width: 22px;
+  height: 22px;
+}
+
+.feature-icon-wrapper.icon-green {
+  background-color: rgba(63, 107, 69, 0.12);
+  color: var(--neem-green);
+  border: 1.5px solid rgba(63, 107, 69, 0.28);
+}
+
+.feature-icon-wrapper.icon-terracotta {
+  background-color: rgba(194, 86, 43, 0.12);
+  color: var(--terracotta);
+  border: 1.5px solid rgba(194, 86, 43, 0.28);
+}
+
+.feature-item-text {
+  font-family: 'Hind', sans-serif;
+  font-size: 17.5px;
+  font-weight: 800;
+  color: var(--text-dark);
+  line-height: 1.35;
+  margin: 0;
+}
+
+/* ========================================================
+   SECTION 4: How It Works (Serpentine S-Curve Step Roadmap)
+   Exact match to the Alternating Pill + Ribbon Reference
+   ======================================================== */
+.section-how-it-works {
+  padding: 40px 14px 44px 14px;
+  background-color: var(--bg-cream);
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid rgba(63, 107, 69, 0.15);
+}
+
+.works-header-box {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.works-brand-tag {
+  display: inline-block;
+  background-color: rgba(63, 107, 69, 0.12);
+  color: var(--neem-green-dark);
+  font-size: 13.5px;
+  font-weight: 800;
+  padding: 5px 18px;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(63, 107, 69, 0.25);
+}
+
+.works-main-title {
+  font-family: 'Hind', sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--text-dark);
+  line-height: 1.25;
+  margin-bottom: 10px;
+  letter-spacing: -0.3px;
+}
+
+.works-title-underline {
+  width: 64px;
+  height: 4.5px;
+  background: linear-gradient(90deg, var(--neem-green) 0%, var(--terracotta) 100%);
+  margin: 0 auto;
+  border-radius: 3px;
+}
+
+/* Serpentine Track Container */
+.serpentine-track-container {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  position: relative;
+  padding: 12px 14px 20px 14px;
+}
+
+/* Step Row Item */
+.snake-step-row {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  transition: transform 0.3s ease;
+}
+
+.snake-step-row:hover {
+  transform: translateY(-2px);
+}
+
+/* Horizontal Pill Card with Solid White Fill */
+.snake-pill-card {
+  width: 100%;
+  min-height: 114px;
+  background: var(--white);
+  border-radius: 60px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  border: 3.5px solid;
+  position: relative;
+  z-index: 5;
+  transition: all 0.3s ease;
+}
+
+.theme-terracotta .snake-pill-card {
+  border-color: var(--terracotta);
+}
+
+.theme-green .snake-pill-card {
+  border-color: var(--neem-green);
+}
+
+.snake-step-row:hover .snake-pill-card {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.14);
+}
+
+/* Layout Orientations with Safe Inner Margins so Text is NEVER Overlapped */
+.row-right .snake-pill-card {
+  padding: 12px 8px 12px 28px;
+  justify-content: space-between;
+}
+
+.row-left .snake-pill-card {
+  padding: 12px 28px 12px 8px;
+  justify-content: space-between;
+}
+
+/* Elevated Circular Disc with Photo - 96px EXTRA LARGE */
+.step-circle-disc {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
+  flex-shrink: 0;
+  z-index: 6;
+  border: 4px solid var(--white);
+  overflow: hidden;
+  transition: transform 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.step-disc-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.snake-step-row:hover .step-disc-img {
+  transform: scale(1.1);
+}
+
+.snake-step-row:hover .step-circle-disc {
+  transform: scale(1.06);
+}
+
+.row-right .step-circle-disc {
+  margin-right: -10px;
+}
+
+.row-left .step-circle-disc {
+  margin-left: -10px;
+}
+
+.theme-terracotta .step-circle-disc {
+  border-color: #FAEEE7;
+}
+
+.theme-green .step-circle-disc {
+  border-color: #E8F0EA;
+}
+
+/* Card Text Content */
+.step-card-text {
+  flex: 1;
+}
+
+.row-right .step-card-text {
+  padding-right: 12px;
+}
+
+.row-left .step-card-text {
+  padding-left: 12px;
+}
+
+.step-number-tag {
+  font-family: 'Outfit', sans-serif;
+  font-size: 13.5px;
+  font-weight: 800;
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 12px;
+  margin-bottom: 5px;
+  letter-spacing: 0.5px;
+}
+
+.theme-terracotta .step-number-tag {
+  background-color: #FAEEE7;
+  color: var(--terracotta);
+  border: 1px solid rgba(194, 86, 43, 0.25);
+}
+
+.theme-green .step-number-tag {
+  background-color: #E8F0EA;
+  color: var(--neem-green);
+  border: 1px solid rgba(63, 107, 69, 0.25);
+}
+
+.step-title-text {
+  font-family: 'Hind', sans-serif;
+  font-size: 19px;
+  font-weight: 800;
+  color: var(--text-dark);
+  line-height: 1.28;
+  margin-bottom: 4px;
+  letter-spacing: -0.2px;
+}
+
+.step-desc-text {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.45;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Serpentine Track Ribbon Connectors (Behind Solid Cards) */
+.snake-loop {
+  position: absolute;
+  width: 34px;
+  height: calc(100% + 36px);
+  top: 50%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.loop-right {
+  right: -10px;
+  border-right: 8px solid var(--terracotta);
+  border-top: 8px solid var(--terracotta);
+  border-bottom: 8px solid var(--neem-green);
+  border-top-right-radius: 46px;
+  border-bottom-right-radius: 46px;
+}
+
+.loop-left {
+  left: -10px;
+  border-left: 8px solid var(--neem-green);
+  border-top: 8px solid var(--neem-green);
+  border-bottom: 8px solid var(--terracotta);
+  border-top-left-radius: 46px;
+  border-bottom-left-radius: 46px;
+}
