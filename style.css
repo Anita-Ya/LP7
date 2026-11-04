@@ -815,16 +815,16 @@ body {
   transform: translateY(-2px);
 }
 
-/* Horizontal Pill Card with Solid White Fill */
+/* Horizontal Pill Card with Solid White Fill - TALLER & LARGER */
 .snake-pill-card {
   width: 100%;
-  min-height: 114px;
+  min-height: 130px;
   background: var(--white);
-  border-radius: 60px;
+  border-radius: 68px;
   display: flex;
   align-items: center;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-  border: 3.5px solid;
+  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.09);
+  border: 4px solid;
   position: relative;
   z-index: 5;
   transition: all 0.3s ease;
@@ -839,33 +839,33 @@ body {
 }
 
 .snake-step-row:hover .snake-pill-card {
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.14);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.16);
 }
 
 /* Layout Orientations with Safe Inner Margins so Text is NEVER Overlapped */
 .row-right .snake-pill-card {
-  padding: 12px 8px 12px 28px;
+  padding: 16px 8px 16px 30px;
   justify-content: space-between;
 }
 
 .row-left .snake-pill-card {
-  padding: 12px 28px 12px 8px;
+  padding: 16px 30px 16px 8px;
   justify-content: space-between;
 }
 
-/* Elevated Circular Disc with Photo - 96px EXTRA LARGE */
+/* Elevated Circular Disc with Photo - 114px EXTRA LARGE */
 .step-circle-disc {
-  width: 96px;
-  height: 96px;
+  width: 114px;
+  height: 114px;
   border-radius: 50%;
   background: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.25);
   flex-shrink: 0;
   z-index: 6;
-  border: 4px solid var(--white);
+  border: 4.5px solid var(--white);
   overflow: hidden;
   transition: transform 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
@@ -887,11 +887,11 @@ body {
 }
 
 .row-right .step-circle-disc {
-  margin-right: -10px;
+  margin-right: -12px;
 }
 
 .row-left .step-circle-disc {
-  margin-left: -10px;
+  margin-left: -12px;
 }
 
 .theme-terracotta .step-circle-disc {
@@ -902,27 +902,27 @@ body {
   border-color: #E8F0EA;
 }
 
-/* Card Text Content */
+/* Card Text Content - BIGGER & BOLDER */
 .step-card-text {
   flex: 1;
 }
 
 .row-right .step-card-text {
-  padding-right: 12px;
+  padding-right: 14px;
 }
 
 .row-left .step-card-text {
-  padding-left: 12px;
+  padding-left: 14px;
 }
 
 .step-number-tag {
   font-family: 'Outfit', sans-serif;
-  font-size: 13.5px;
+  font-size: 15px;
   font-weight: 800;
   display: inline-block;
-  padding: 2px 10px;
-  border-radius: 12px;
-  margin-bottom: 5px;
+  padding: 3px 12px;
+  border-radius: 14px;
+  margin-bottom: 6px;
   letter-spacing: 0.5px;
 }
 
@@ -940,17 +940,17 @@ body {
 
 .step-title-text {
   font-family: 'Hind', sans-serif;
-  font-size: 19px;
+  font-size: 22px;
   font-weight: 800;
   color: var(--text-dark);
-  line-height: 1.28;
-  margin-bottom: 4px;
+  line-height: 1.25;
+  margin-bottom: 6px;
   letter-spacing: -0.2px;
 }
 
 .step-desc-text {
-  font-size: 14px;
-  color: var(--text-muted);
+  font-size: 15.5px;
+  color: #354238;
   line-height: 1.45;
   font-weight: 600;
   margin: 0;
@@ -959,8 +959,8 @@ body {
 /* Serpentine Track Ribbon Connectors (Behind Solid Cards) */
 .snake-loop {
   position: absolute;
-  width: 34px;
-  height: calc(100% + 36px);
+  width: 36px;
+  height: calc(100% + 40px);
   top: 50%;
   z-index: 1;
   pointer-events: none;
@@ -968,18 +968,239 @@ body {
 
 .loop-right {
   right: -10px;
-  border-right: 8px solid var(--terracotta);
-  border-top: 8px solid var(--terracotta);
-  border-bottom: 8px solid var(--neem-green);
-  border-top-right-radius: 46px;
-  border-bottom-right-radius: 46px;
+  border-right: 9px solid var(--terracotta);
+  border-top: 9px solid var(--terracotta);
+  border-bottom: 9px solid var(--neem-green);
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
 }
 
 .loop-left {
   left: -10px;
-  border-left: 8px solid var(--neem-green);
-  border-top: 8px solid var(--neem-green);
-  border-bottom: 8px solid var(--terracotta);
-  border-top-left-radius: 46px;
-  border-bottom-left-radius: 46px;
+  border-left: 9px solid var(--neem-green);
+  border-top: 9px solid var(--neem-green);
+  border-bottom: 9px solid var(--terracotta);
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+/* ========================================================
+   SECTION 5: Ingredients (Botanical Leaf Vine Layout)
+   Exact match to the Alternating Botanical Leaf Tree Reference
+   ======================================================== */
+.section-ingredients-vine {
+  padding: 42px 14px 44px 14px;
+  background-color: var(--bg-cream);
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid rgba(63, 107, 69, 0.15);
+}
+
+.ing-header-box {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.ing-brand-tag {
+  display: inline-block;
+  background-color: rgba(63, 107, 69, 0.12);
+  color: var(--neem-green-dark);
+  font-size: 13.5px;
+  font-weight: 800;
+  padding: 5px 18px;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(63, 107, 69, 0.25);
+}
+
+.ing-main-title {
+  font-family: 'Hind', sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--text-dark);
+  line-height: 1.25;
+  margin-bottom: 10px;
+  letter-spacing: -0.3px;
+}
+
+.ing-title-underline {
+  width: 64px;
+  height: 4.5px;
+  background: linear-gradient(90deg, var(--neem-green) 0%, var(--terracotta) 100%);
+  margin: 0 auto;
+  border-radius: 3px;
+}
+
+/* Botanical Vine Tree Container */
+.botanical-vine-tree {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  padding: 10px 4px 16px 4px;
+}
+
+/* Central Vine Stem Line (Running through the middle) */
+.vine-stem-spine {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 25px;
+  bottom: 50px;
+  width: 6px;
+  background: linear-gradient(180deg, var(--neem-green) 0%, #355E3B 50%, #2A482F 100%);
+  border-radius: 4px;
+  z-index: 1;
+}
+
+/* Tier Row Item */
+.vine-tier-row {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 16px;
+  z-index: 2;
+  transition: transform 0.3s ease;
+}
+
+.vine-tier-row:hover {
+  transform: translateY(-3px);
+}
+
+/* Photo Leaf Node (125px EXTRA LARGE HERO LEAF) */
+.leaf-photo-badge {
+  flex-shrink: 0;
+  z-index: 3;
+}
+
+.leaf-photo-inner {
+  width: 125px;
+  height: 125px;
+  overflow: hidden;
+  border: 4.5px solid var(--white);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.22);
+  background-color: var(--white);
+  transition: transform 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.leaf-badge-left .leaf-photo-inner {
+  border-radius: 54px 0 54px 54px;
+}
+
+.leaf-badge-right .leaf-photo-inner {
+  border-radius: 0 54px 54px 54px;
+}
+
+.vine-tier-row:hover .leaf-photo-inner {
+  transform: scale(1.06);
+}
+
+.leaf-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.vine-tier-row:hover .leaf-img {
+  transform: scale(1.1);
+}
+
+/* Compact Content Leaf Card (Chota & Sleek Text Badge) */
+.leaf-content-card {
+  width: 135px;
+  min-height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px 14px;
+  color: var(--white);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.14);
+  border: 3px solid var(--white);
+  position: relative;
+  z-index: 3;
+  transition: all 0.3s ease;
+}
+
+.card-shape-right {
+  border-radius: 34px 0 34px 34px;
+}
+
+.card-shape-left {
+  border-radius: 0 34px 34px 34px;
+}
+
+.vine-tier-row:hover .leaf-content-card {
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.2);
+  transform: scale(1.03);
+}
+
+/* Tier Color Themes (Botanical Leaf Gradients) */
+.tier-neem .leaf-content-card {
+  background: linear-gradient(135deg, #4A7C52 0%, #305835 100%);
+}
+
+.tier-loung .leaf-content-card {
+  background: linear-gradient(135deg, #C2562B 0%, #9E3D18 100%);
+}
+
+.tier-babul .leaf-content-card {
+  background: linear-gradient(135deg, #2D5432 0%, #1A3820 100%);
+}
+
+.tier-pudina .leaf-content-card {
+  background: linear-gradient(135deg, #458252 0%, #2A5A33 100%);
+}
+
+.leaf-card-num {
+  font-family: 'Outfit', sans-serif;
+  font-size: 15px;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1;
+  margin: 0;
+  display: inline-block;
+}
+
+.leaf-card-name {
+  font-family: 'Hind', sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--white);
+  line-height: 1;
+  margin: 0;
+  letter-spacing: -0.2px;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+}
+
+/* Botanical Tree Trunk & Base Stand (Reference Bottom Stand) */
+.botanical-tree-base {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -6px;
+  z-index: 2;
+  position: relative;
+}
+
+.tree-trunk-post {
+  width: 14px;
+  height: 38px;
+  background: linear-gradient(180deg, #5E4B3B 0%, #4A3A2C 100%);
+  border-radius: 4px;
+}
+
+.tree-ground-pedestal {
+  width: 190px;
+  height: 8px;
+  background: linear-gradient(90deg, #A89582 0%, #5E4B3B 50%, #A89582 100%);
+  border-radius: 6px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.18);
+  margin-top: -2px;
 }
