@@ -57,14 +57,27 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
+  padding-bottom: 76px;
 }
 
 .hero-hook-section {
   width: 100%;
-  display: flex;
-  flex-direction: column;
   position: relative;
   background-color: var(--bg-cream);
+  line-height: 0;
+}
+
+.hero-poster-wrapper {
+  width: 100%;
+  position: relative;
+  line-height: 0;
+  overflow: hidden;
+}
+
+.hero-poster-img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* ========================================================
@@ -252,7 +265,7 @@ body {
    Extra Large Images (106px), 21px Bold Text & Staggered Reveal Animation
    ======================================================== */
 .section-understand-problems {
-  padding: 34px 12px 34px 12px;
+  padding: 24px 12px 18px 12px;
   background-color: var(--bg-cream);
   overflow: hidden;
 }
@@ -492,7 +505,7 @@ body {
   border-left: 6px solid var(--terracotta);
   border-radius: 18px;
   padding: 22px 24px;
-  margin-top: 26px;
+  margin-top: 18px;
   text-align: center;
   box-shadow: 0 6px 24px rgba(194, 86, 43, 0.18);
   border-top: 1px solid rgba(194, 86, 43, 0.2);
@@ -525,16 +538,15 @@ body {
    Angular Color Block + 3D Product Podium Stage
    ======================================================== */
 .section-product-showcase {
-  padding: 38px 14px 40px 14px;
+  padding: 20px 14px 22px 14px;
   background-color: var(--bg-cream);
   position: relative;
   overflow: hidden;
-  border-top: 1px solid rgba(63, 107, 69, 0.15);
 }
 
 .product-header-box {
   text-align: center;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 
 .product-brand-tag {
@@ -556,7 +568,7 @@ body {
   font-weight: 800;
   color: var(--text-dark);
   line-height: 1.25;
-  margin-bottom: 10px;
+  margin-bottom: 0;
   letter-spacing: -0.3px;
 }
 
@@ -736,12 +748,13 @@ body {
 }
 
 .feature-item-text {
-  font-family: 'Hind', sans-serif;
-  font-size: 17.5px;
-  font-weight: 800;
+  font-family: 'Outfit', 'Hind', sans-serif;
+  font-size: 19px;
+  font-weight: 700;
   color: var(--text-dark);
   line-height: 1.35;
   margin: 0;
+  letter-spacing: -0.2px;
 }
 
 /* ========================================================
@@ -749,16 +762,15 @@ body {
    Exact match to the Alternating Pill + Ribbon Reference
    ======================================================== */
 .section-how-it-works {
-  padding: 40px 14px 44px 14px;
+  padding: 20px 14px 22px 14px;
   background-color: var(--bg-cream);
   position: relative;
   overflow: hidden;
-  border-top: 1px solid rgba(63, 107, 69, 0.15);
 }
 
 .works-header-box {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 }
 
 .works-brand-tag {
@@ -780,7 +792,7 @@ body {
   font-weight: 800;
   color: var(--text-dark);
   line-height: 1.25;
-  margin-bottom: 10px;
+  margin-bottom: 0;
   letter-spacing: -0.3px;
 }
 
@@ -939,11 +951,11 @@ body {
 }
 
 .step-title-text {
-  font-family: 'Hind', sans-serif;
-  font-size: 22px;
+  font-family: 'Outfit', 'Hind', sans-serif;
+  font-size: 20.5px;
   font-weight: 800;
   color: var(--text-dark);
-  line-height: 1.25;
+  line-height: 1.22;
   margin-bottom: 6px;
   letter-spacing: -0.2px;
 }
@@ -989,16 +1001,15 @@ body {
    Exact match to the Alternating Botanical Leaf Tree Reference
    ======================================================== */
 .section-ingredients-vine {
-  padding: 42px 14px 44px 14px;
+  padding: 20px 14px 22px 14px;
   background-color: var(--bg-cream);
   position: relative;
   overflow: hidden;
-  border-top: 1px solid rgba(63, 107, 69, 0.15);
 }
 
 .ing-header-box {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 }
 
 .ing-brand-tag {
@@ -1020,7 +1031,7 @@ body {
   font-weight: 800;
   color: var(--text-dark);
   line-height: 1.25;
-  margin-bottom: 10px;
+  margin-bottom: 0;
   letter-spacing: -0.3px;
 }
 
@@ -1203,4 +1214,1364 @@ body {
   border-radius: 6px;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.18);
   margin-top: -2px;
+}
+
+/* ========================================================
+   SECTION 6: Trust & Quality (Cloverleaf 4-Petal Quadrant)
+   Exact match to the 4-Leaf Quadrant Reference Poster
+   ======================================================== */
+.section-trust-quality {
+  padding: 20px 14px 22px 14px;
+  background-color: var(--bg-cream);
+  position: relative;
+  overflow: hidden;
+}
+
+.trust-header-box {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.trust-main-title {
+  font-family: 'Hind', sans-serif;
+  font-size: 27px;
+  font-weight: 800;
+  color: var(--text-dark);
+  line-height: 1.25;
+  margin-bottom: 0;
+  letter-spacing: -0.3px;
+}
+
+.trust-title-underline {
+  width: 64px;
+  height: 4.5px;
+  background: linear-gradient(90deg, var(--neem-green) 0%, var(--terracotta) 100%);
+  margin: 0 auto;
+  border-radius: 3px;
+}
+
+/* Cloverleaf Outer Stage on Neem Canvas (Exact Green from Section 4) */
+.clover-quadrant-wrapper {
+  background-color: var(--neem-green);
+  border-radius: 32px;
+  padding: 34px 18px;
+  box-shadow: 0 12px 36px rgba(63, 107, 69, 0.28);
+  position: relative;
+  margin: 0 auto;
+}
+
+/* 2x2 Quadrant Grid */
+.clover-quadrant-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+/* Individual Petal Card with Solid White Fill & Inward Point */
+.clover-petal {
+  background: var(--white);
+  min-height: 185px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 24px 8px 16px 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
+}
+
+.clover-petal:hover {
+  transform: scale(1.04);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22);
+}
+
+/* Geometric Petal Corner Radiuses (Point toward center) */
+.petal-top-left {
+  border-radius: 86px 86px 16px 86px;
+}
+
+.petal-top-right {
+  border-radius: 86px 86px 86px 16px;
+}
+
+.petal-bottom-left {
+  border-radius: 86px 16px 86px 86px;
+}
+
+.petal-bottom-right {
+  border-radius: 16px 86px 86px 86px;
+}
+
+/* Circular Number Badge at Outer Corner (1, 2, 3, 4) */
+.clover-badge {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #1B2B1F;
+  color: var(--white);
+  font-family: 'Outfit', sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+  border: 2.5px solid var(--white);
+  z-index: 5;
+}
+
+.badge-top-left {
+  top: -8px;
+  left: -8px;
+}
+
+.badge-top-right {
+  top: -8px;
+  right: -8px;
+}
+
+.badge-bottom-left {
+  bottom: -8px;
+  left: -8px;
+}
+
+.badge-bottom-right {
+  bottom: -8px;
+  right: -8px;
+}
+
+/* Trust / Certification Image Wrapper - EXTRA LARGE */
+.clover-cert-img-box {
+  width: 104px;
+  height: 104px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 6px;
+  padding: 2px;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.clover-cert-img {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.12));
+  display: block;
+}
+
+.clover-petal:hover .clover-cert-img-box {
+  transform: scale(1.1);
+}
+
+/* Petal Title */
+.clover-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin: 0;
+  letter-spacing: 0.5px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+/* ========================================================
+   SECTION 7: Final CTA
+   High-Converting Final Call to Action (Enhanced Premium Styling)
+   ======================================================== */
+.section-final-cta {
+  padding: 22px 14px 24px 14px;
+  background-color: var(--bg-cream);
+  position: relative;
+  overflow: hidden;
+}
+
+.final-cta-card {
+  background: linear-gradient(180deg, #FFFFFF 0%, #FCFAF4 60%, #F5F0E4 100%);
+  border: 2px solid rgba(63, 107, 69, 0.2);
+  border-radius: 32px;
+  padding: 32px 18px 28px 18px;
+  text-align: center;
+  box-shadow: 0 18px 45px rgba(63, 107, 69, 0.12), 0 4px 16px rgba(0, 0, 0, 0.04);
+  position: relative;
+  overflow: hidden;
+}
+
+.final-cta-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: linear-gradient(90deg, #3F6B45 0%, #C2562B 50%, #E58B24 100%);
+}
+
+/* Glowing Halo Stage Behind Product Image */
+.cta-product-halo-stage {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.cta-product-halo-stage::before {
+  content: '';
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(63, 107, 69, 0.16) 0%, rgba(229, 139, 36, 0.08) 55%, transparent 75%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Product Image Box - Larger, Crisp, Floating */
+.cta-product-preview {
+  position: relative;
+  z-index: 1;
+  width: 200px;
+  height: 200px;
+  border-radius: 26px;
+  overflow: hidden;
+  border: 4px solid #FFFFFF;
+  box-shadow: 0 14px 34px rgba(63, 107, 69, 0.22), 0 0 0 1px rgba(63, 107, 69, 0.14);
+  background: #FFFFFF;
+  transition: transform 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.35s ease;
+}
+
+.final-cta-card:hover .cta-product-preview {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 18px 40px rgba(63, 107, 69, 0.28), 0 0 0 1px rgba(63, 107, 69, 0.2);
+}
+
+.cta-product-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Headline */
+.cta-main-title {
+  font-family: 'Hind', sans-serif;
+  font-size: 26px;
+  font-weight: 800;
+  color: #1E281F;
+  line-height: 1.28;
+  margin: 0 0 16px 0;
+  letter-spacing: -0.3px;
+}
+
+.cta-title-highlight {
+  color: #C2562B;
+  display: inline-block;
+}
+
+/* Description */
+.cta-lead-desc {
+  font-family: 'Hind', sans-serif;
+  font-size: 16.5px;
+  font-weight: 600;
+  color: #3C4B3E;
+  line-height: 1.55;
+  margin: 0 auto 18px auto;
+  max-width: 360px;
+}
+
+.cta-brand-hl {
+  color: #3F6B45;
+  font-weight: 800;
+}
+
+/* Slogan Companion Badge - Sleek Wellness Pill */
+.cta-companion-badge {
+  background: linear-gradient(135deg, rgba(63, 107, 69, 0.12) 0%, rgba(63, 107, 69, 0.05) 100%);
+  border: 1.5px solid rgba(63, 107, 69, 0.28);
+  padding: 8px 16px;
+  border-radius: 30px;
+  margin: 0 auto 22px auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  max-width: 100%;
+  box-shadow: 0 2px 8px rgba(63, 107, 69, 0.06);
+}
+
+.companion-icon-wrap {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #3F6B45;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.companion-icon-wrap svg {
+  width: 11px;
+  height: 11px;
+}
+
+.companion-text {
+  font-family: 'Outfit', sans-serif;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #27472B;
+  letter-spacing: 0.2px;
+  line-height: 1.3;
+}
+
+/* High-Impact CTA Button */
+.cta-btn-wrapper {
+  width: 100%;
+}
+
+.final-cta-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  padding: 16px 24px;
+  background: linear-gradient(135deg, #DE5E30 0%, #C2562B 50%, #A23F16 100%);
+  color: #FFFFFF;
+  text-decoration: none;
+  border-radius: 50px;
+  font-family: 'Hind', sans-serif;
+  font-size: 21px;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+  box-shadow: 0 10px 28px rgba(194, 86, 43, 0.42);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  position: relative;
+  animation: ctaPulse 2.5s infinite;
+}
+
+.final-cta-btn:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 14px 34px rgba(194, 86, 43, 0.55);
+  background: linear-gradient(135deg, #E86636 0%, #C2562B 50%, #943712 100%);
+}
+
+.btn-arrow-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background: rgba(255, 255, 255, 0.24);
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.btn-arrow-icon svg {
+  width: 16px;
+  height: 16px;
+}
+
+.final-cta-btn:hover .btn-arrow-icon {
+  transform: translateX(4px);
+}
+
+@keyframes ctaPulse {
+  0% {
+    box-shadow: 0 10px 28px rgba(194, 86, 43, 0.42);
+  }
+  50% {
+    box-shadow: 0 14px 36px rgba(194, 86, 43, 0.65), 0 0 0 8px rgba(194, 86, 43, 0.12);
+  }
+  100% {
+    box-shadow: 0 10px 28px rgba(194, 86, 43, 0.42);
+  }
+}
+
+/* ========================================================
+   SECTION 8: Order Now
+   Streamlined High-Converting Lead / Order Form
+   ======================================================== */
+.section-order-now {
+  padding: 20px 14px 22px 14px;
+  background-color: var(--bg-cream);
+  position: relative;
+  overflow: hidden;
+}
+
+.order-form-container {
+  max-width: 100%;
+}
+
+.order-header-box {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.order-brand-tag {
+  display: inline-block;
+  background-color: rgba(194, 86, 43, 0.12);
+  color: var(--terracotta);
+  font-size: 13.5px;
+  font-weight: 800;
+  padding: 5px 16px;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(194, 86, 43, 0.25);
+}
+
+.order-main-title {
+  font-family: 'Hind', sans-serif;
+  font-size: 27px;
+  font-weight: 800;
+  color: var(--text-dark);
+  line-height: 1.25;
+  margin-bottom: 10px;
+  letter-spacing: -0.3px;
+}
+
+.order-title-underline {
+  width: 60px;
+  height: 4.5px;
+  background: linear-gradient(90deg, var(--neem-green) 0%, var(--terracotta) 100%);
+  margin: 0 auto 12px auto;
+  border-radius: 3px;
+}
+
+.order-subtitle {
+  font-family: 'Hind', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #3B4B3E;
+  line-height: 1.4;
+  margin: 0;
+  letter-spacing: -0.2px;
+}
+
+/* Order Form Card */
+.order-form-card {
+  background: var(--white);
+  border: 2px solid #E2DCCF;
+  border-radius: 26px;
+  padding: 28px 20px 24px 20px;
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.08);
+  position: relative;
+  overflow: hidden;
+}
+
+.order-form-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, var(--terracotta) 0%, var(--neem-green) 100%);
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+  position: relative;
+}
+
+.form-label {
+  display: block;
+  font-family: 'Hind', sans-serif;
+  font-size: 17.5px;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+/* Input with Left Inside Icon */
+.input-with-icon {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.input-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #7B857E;
+  pointer-events: none;
+  transition: color 0.25s ease;
+  z-index: 2;
+}
+
+.input-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.form-input {
+  width: 100%;
+  height: 54px;
+  background: #FAF8F3;
+  border: 1.8px solid #DCD5C6;
+  border-radius: 14px;
+  padding: 0 16px 0 46px;
+  font-family: 'Hind', sans-serif;
+  font-size: 16.5px;
+  font-weight: 600;
+  color: var(--text-dark);
+  transition: all 0.25s ease;
+  box-sizing: border-box;
+}
+
+.form-input::placeholder {
+  color: #9A958A;
+  font-weight: 500;
+}
+
+.form-input:focus {
+  outline: none;
+  background: var(--white);
+  border-color: var(--neem-green);
+  box-shadow: 0 0 0 3.5px rgba(63, 107, 69, 0.16);
+}
+
+.input-with-icon:focus-within .input-icon {
+  color: var(--neem-green);
+}
+
+/* Validation Error State (Matches User Reference Image) */
+.form-group.has-error .form-input {
+  border-color: #D32F2F !important;
+  background-color: #FFF6F6 !important;
+  color: #B71C1C;
+  box-shadow: 0 0 0 3px rgba(211, 47, 47, 0.14) !important;
+}
+
+.form-group.has-error .input-icon {
+  color: #D32F2F !important;
+}
+
+.form-error-msg {
+  display: none;
+  font-family: 'Hind', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #D32F2F;
+  margin-top: 6px;
+  padding-left: 2px;
+  line-height: 1.35;
+}
+
+.form-group.has-error .form-error-msg {
+  display: block;
+  animation: errShake 0.3s ease;
+}
+
+@keyframes errShake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+
+/* Submit Button */
+.form-submit-wrapper {
+  margin-top: 10px;
+  margin-bottom: 18px;
+}
+
+.order-submit-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  height: 56px;
+  background: linear-gradient(135deg, #D45D30 0%, #C2562B 50%, #A9431A 100%);
+  color: var(--white);
+  border: none;
+  border-radius: 50px;
+  font-family: 'Hind', sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+  box-shadow: 0 8px 24px rgba(194, 86, 43, 0.38);
+  transition: all 0.3s ease;
+  animation: ctaPulse 2.5s infinite;
+}
+
+.order-submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(194, 86, 43, 0.52);
+  background: linear-gradient(135deg, #DF6334 0%, #C2562B 50%, #993C15 100%);
+}
+
+.submit-arrow-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  background: rgba(255, 255, 255, 0.22);
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.submit-arrow-icon svg {
+  width: 15px;
+  height: 15px;
+}
+
+.order-submit-btn:hover .submit-arrow-icon {
+  transform: scale(1.15);
+}
+
+/* Trust Strip */
+.order-trust-strip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-top: 6px;
+  border-top: 1px dashed #E2DCCF;
+}
+
+.trust-pill {
+  font-family: 'Hind', sans-serif;
+  font-size: 14.5px;
+  font-weight: 700;
+  color: #4A5B4D;
+}
+
+.trust-dot {
+  color: var(--terracotta);
+  font-weight: 800;
+  font-size: 16px;
+}
+
+/* ========================================================
+   SECTION 9: Customer Reviews
+   Authentic Customer Experience Showcase with Real Photos
+   ======================================================== */
+.section-customer-reviews {
+  padding: 20px 14px 22px 14px;
+  background-color: var(--bg-cream);
+  position: relative;
+  overflow: hidden;
+}
+
+.reviews-header-box {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.reviews-brand-tag {
+  display: inline-block;
+  background-color: rgba(63, 107, 69, 0.12);
+  color: var(--neem-green);
+  font-size: 13.5px;
+  font-weight: 800;
+  padding: 5px 16px;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(63, 107, 69, 0.25);
+}
+
+.reviews-main-title {
+  font-family: 'Hind', sans-serif;
+  font-size: 27px;
+  font-weight: 800;
+  color: var(--text-dark);
+  line-height: 1.25;
+  margin-bottom: 10px;
+  letter-spacing: -0.3px;
+}
+
+.reviews-title-underline {
+  width: 60px;
+  height: 4.5px;
+  background: linear-gradient(90deg, var(--neem-green) 0%, var(--terracotta) 100%);
+  margin: 0 auto 12px auto;
+  border-radius: 3px;
+}
+
+.reviews-subtitle {
+  font-family: 'Hind', sans-serif;
+  font-size: 17.5px;
+  font-weight: 700;
+  color: #3B4B3E;
+  line-height: 1.45;
+  margin: 0;
+  letter-spacing: -0.2px;
+}
+
+/* Review Cards List */
+.reviews-cards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+/* Reference Card Style (Matches Page Neem Green & Terracotta Palette) */
+.ref-review-card {
+  background: var(--white);
+  border: 2.5px solid var(--neem-green);
+  border-radius: 24px;
+  padding: 18px 16px 16px 16px;
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  box-shadow: 0 8px 24px rgba(63, 107, 69, 0.1);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.ref-review-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(63, 107, 69, 0.18);
+}
+
+.ref-review-card:nth-child(even) {
+  border-color: var(--terracotta);
+  box-shadow: 0 8px 24px rgba(194, 86, 43, 0.1);
+}
+
+.ref-review-card:nth-child(even):hover {
+  box-shadow: 0 12px 30px rgba(194, 86, 43, 0.18);
+}
+
+/* Left Column: Avatar & City Badge */
+.ref-review-left {
+  width: 72px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ref-avatar-box {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  border: 2.5px solid var(--neem-green);
+  overflow: hidden;
+  background: #E8ECEE;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.ref-review-card:nth-child(even) .ref-avatar-box {
+  border-color: var(--terracotta);
+}
+
+.ref-avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.avatar-face-right {
+  object-position: 85% center;
+}
+
+.ref-city-badge {
+  margin-top: -12px;
+  background: var(--neem-green-dark);
+  color: var(--white);
+  font-family: 'Hind', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 2.5px 12px;
+  border-radius: 12px;
+  z-index: 2;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+  letter-spacing: 0.2px;
+}
+
+.ref-review-card:nth-child(even) .ref-city-badge {
+  background: var(--terracotta-dark);
+}
+
+/* Right Column: Name, Stars, Quote */
+.ref-review-right {
+  flex: 1;
+  min-width: 0;
+  position: relative;
+  padding-right: 6px;
+}
+
+.ref-top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.ref-user-name {
+  font-family: 'Hind', sans-serif;
+  font-size: 20.5px;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin: 0;
+  line-height: 1.2;
+}
+
+.ref-stars {
+  color: #E58B24;
+  font-size: 16px;
+  letter-spacing: 2.5px;
+  line-height: 1;
+}
+
+.ref-quote-text {
+  font-family: 'Hind', sans-serif;
+  font-size: 14.5px;
+  font-weight: 600;
+  color: #354238;
+  line-height: 1.5;
+  margin: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.ref-quote-mark {
+  position: absolute;
+  right: 2px;
+  bottom: -14px;
+  font-family: Georgia, serif;
+  font-size: 50px;
+  line-height: 1;
+  color: rgba(63, 107, 69, 0.16);
+  pointer-events: none;
+  z-index: 1;
+  user-select: none;
+}
+
+.ref-review-card:nth-child(even) .ref-quote-mark {
+  color: rgba(194, 86, 43, 0.16);
+}
+
+/* ========================================================
+   STICKY BOTTOM CTA BAR (Fixed Across Whole Page)
+   Matches Page Neem Green (#3F6B45) & Terracotta Palette
+   ======================================================== */
+.sticky-bottom-bar {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 450px;
+  background-color: var(--neem-green);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-top: 1.5px solid rgba(255, 255, 255, 0.22);
+  padding: 12px 18px 14px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  z-index: 999;
+  box-shadow: 0 -6px 24px rgba(43, 78, 49, 0.35);
+}
+
+.sticky-bar-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.sticky-product-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 17.5px;
+  font-weight: 800;
+  color: var(--white);
+  margin: 0;
+  line-height: 1.2;
+  letter-spacing: 0.3px;
+}
+
+.sticky-product-tagline {
+  font-family: 'Hind', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.88);
+  line-height: 1.2;
+}
+
+.sticky-bar-right {
+  flex-shrink: 0;
+}
+
+.sticky-order-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, #D45D30 0%, #C2562B 50%, #A9431A 100%);
+  color: var(--white);
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 26px;
+  font-family: 'Hind', sans-serif;
+  font-size: 17.5px;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.28);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sticky-order-btn:hover {
+  transform: scale(1.04);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.38);
+  background: linear-gradient(135deg, #DF6334 0%, #C2562B 50%, #993C15 100%);
+}
+
+.sticky-cart-icon {
+  width: 18px;
+  height: 18px;
+  stroke: currentColor;
+}
+
+/* ========================================================
+   SECTION 10: FAQs (Accordion)
+   Matching project palette: #3F6B45 neem green, #F6F4EA cream
+   ======================================================== */
+.section-faqs {
+  padding: 20px 14px 20px 14px;
+  background: var(--bg-cream, #F6F4EA);
+}
+
+.faq-header-box {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.faq-main-title {
+  font-family: 'Hind', sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  color: #1E281F;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.faq-accordion-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.faq-accordion-item {
+  background: #FFFFFF;
+  border-radius: 14px;
+  border: 1.5px solid rgba(63, 107, 69, 0.16);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.faq-accordion-item.active {
+  border-color: #3F6B45;
+  box-shadow: 0 4px 14px rgba(63, 107, 69, 0.12);
+}
+
+.faq-question-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 16px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font-family: 'Hind', sans-serif;
+  transition: background-color 0.2s ease;
+}
+
+.faq-question-btn:hover {
+  background-color: rgba(63, 107, 69, 0.03);
+}
+
+.faq-q-text {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1E281F;
+  line-height: 1.35;
+  flex: 1;
+}
+
+.faq-accordion-item.active .faq-q-text {
+  color: #3F6B45;
+}
+
+.faq-icon-toggle {
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(63, 107, 69, 0.08);
+  color: #3F6B45;
+  transition: transform 0.3s ease, background 0.2s ease, color 0.2s ease;
+}
+
+.faq-icon-toggle svg {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.3s ease;
+}
+
+.faq-accordion-item.active .faq-icon-toggle {
+  background: #3F6B45;
+  color: #FFFFFF;
+  transform: rotate(180deg);
+}
+
+.faq-answer-panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease, padding 0.3s ease;
+  padding: 0 16px;
+  background: #FAF8F2;
+  border-top: 1px solid transparent;
+}
+
+.faq-accordion-item.active .faq-answer-panel {
+  max-height: 250px;
+  padding: 12px 16px 16px;
+  border-top: 1px dashed rgba(63, 107, 69, 0.15);
+}
+
+.faq-a-text {
+  font-family: 'Hind', sans-serif;
+  font-size: 14.5px;
+  font-weight: 500;
+  color: #354238;
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* ========================================================
+   SECTION 11: Disclaimer
+   Subtle / Muted Legal Footnote (Blends softly into background)
+   ======================================================== */
+.section-legal-disclaimer {
+  padding: 10px 18px 36px;
+  background: transparent;
+}
+
+.disclaimer-content-box {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  opacity: 0.65;
+  transition: opacity 0.2s ease;
+}
+
+.disclaimer-content-box:hover {
+  opacity: 0.9;
+}
+
+.disclaimer-box-title {
+  font-family: 'Hind', sans-serif;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: #7E8D80;
+  margin: 0 0 4px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+.disclaimer-body-text {
+  font-family: 'Hind', sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  color: #7E8D80;
+  line-height: 1.6;
+  margin: 0;
+}
+
+
+/* ========================================================
+   ORDER SUCCESS THANK YOU MODAL POPUP
+   Exact match to reference popup design with page color theme
+   ======================================================== */
+.thankyou-modal-overlay {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  z-index: 100000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.3s ease;
+}
+
+.thankyou-modal-overlay.is-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.thankyou-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(22, 34, 24, 0.68);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.thankyou-modal-card {
+  position: relative;
+  width: 100%;
+  max-width: 390px;
+  background: #FFFFFF;
+  border-radius: 28px;
+  padding: 34px 22px 28px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.32), 0 4px 16px rgba(63, 107, 69, 0.12);
+  text-align: center;
+  z-index: 2;
+  transform: scale(0.88) translateY(24px);
+  transition: transform 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.25);
+  border: 1px solid rgba(63, 107, 69, 0.1);
+}
+
+.thankyou-modal-overlay.is-active .thankyou-modal-card {
+  transform: scale(1) translateY(0);
+}
+
+/* Close Button (X in circle) */
+.thankyou-close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1.5px solid #E5E0D5;
+  background: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #728174;
+  transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  padding: 0;
+}
+
+.thankyou-close-btn svg {
+  width: 17px;
+  height: 17px;
+}
+
+.thankyou-close-btn:hover {
+  background: #F6F4EA;
+  color: #1E281F;
+  border-color: #3F6B45;
+  transform: rotate(90deg);
+}
+
+/* Checkmark Icon Circle */
+.thankyou-check-outer {
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+  background: rgba(63, 107, 69, 0.12);
+  margin: 0 auto 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: pulseOuter 2.2s infinite ease-in-out;
+}
+
+@keyframes pulseOuter {
+  0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(63, 107, 69, 0.15); }
+  50% { transform: scale(1.04); box-shadow: 0 0 0 10px rgba(63, 107, 69, 0); }
+}
+
+.thankyou-check-circle {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: #D9EFE0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3F6B45;
+  border: 2px solid rgba(63, 107, 69, 0.3);
+}
+
+.thankyou-check-circle svg {
+  width: 30px;
+  height: 30px;
+  stroke: #3F6B45;
+}
+
+/* Pill Badge: Order Confirmed! */
+.thankyou-badge-wrap {
+  margin-bottom: 12px;
+}
+
+.thankyou-badge-pill {
+  display: inline-block;
+  background: rgba(63, 107, 69, 0.11);
+  color: #3F6B45;
+  border: 1px solid rgba(63, 107, 69, 0.22);
+  font-family: 'Outfit', sans-serif;
+  font-size: 13.5px;
+  font-weight: 700;
+  padding: 4px 16px;
+  border-radius: 20px;
+  letter-spacing: 0.2px;
+}
+
+/* Headline */
+.thankyou-headline {
+  font-family: 'Hind', sans-serif;
+  font-size: 25px;
+  font-weight: 800;
+  color: #1E281F;
+  margin: 0 0 8px;
+  line-height: 1.25;
+}
+
+.thankyou-cust-name {
+  color: #3F6B45;
+  font-weight: 800;
+}
+
+/* Sub-message */
+.thankyou-submessage {
+  font-family: 'Hind', sans-serif;
+  font-size: 14.5px;
+  font-weight: 500;
+  color: #4A584C;
+  line-height: 1.45;
+  margin: 0 auto 18px;
+  max-width: 320px;
+}
+
+.thankyou-submessage strong {
+  color: #1E281F;
+  font-weight: 700;
+}
+
+/* Order Details Box */
+.thankyou-details-box {
+  background: #FAF8F2;
+  border-radius: 18px;
+  border: 1.5px solid rgba(63, 107, 69, 0.16);
+  padding: 12px 18px;
+  margin-bottom: 14px;
+}
+
+.thankyou-detail-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 0;
+  font-family: 'Hind', sans-serif;
+  font-size: 14.5px;
+}
+
+.detail-label {
+  color: #667568;
+  font-weight: 600;
+}
+
+.detail-value {
+  font-weight: 700;
+}
+
+.value-dark {
+  font-family: 'Outfit', sans-serif;
+  font-size: 15px;
+  color: #1E281F;
+  letter-spacing: 0.3px;
+}
+
+.value-green {
+  font-family: 'Outfit', sans-serif;
+  font-size: 14.5px;
+  color: #3F6B45;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+}
+
+.thankyou-detail-divider {
+  border-top: 1px dashed rgba(63, 107, 69, 0.16);
+  margin: 1px 0;
+}
+
+/* Helper Text */
+.thankyou-helper-text {
+  font-family: 'Hind', sans-serif;
+  font-size: 12.5px;
+  font-weight: 500;
+  color: #667568;
+  line-height: 1.4;
+  margin: 0 0 18px;
+}
+
+/* Action Confirm CTA Button */
+.thankyou-confirm-btn {
+  width: 100%;
+  padding: 13px 20px;
+  background: #1B3523;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 30px;
+  font-family: 'Hind', sans-serif;
+  font-size: 17.5px;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(27, 53, 35, 0.35);
+  transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+  letter-spacing: 0.3px;
+}
+
+.thankyou-confirm-btn:hover {
+  background: #274E33;
+  transform: scale(1.02);
+  box-shadow: 0 8px 24px rgba(27, 53, 35, 0.45);
+}
+
+@media (max-width: 380px) {
+  .thankyou-modal-card {
+    padding: 28px 16px 22px;
+    border-radius: 22px;
+  }
+  .thankyou-headline {
+    font-size: 22px;
+  }
+  .thankyou-submessage {
+    font-size: 13.5px;
+  }
 }

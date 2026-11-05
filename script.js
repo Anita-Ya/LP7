@@ -82,4 +82,159 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+  // ========================================================
+  // SECTION 8: Form Validation (Exact match to reference)
+  // Name: Only letters (no numbers) -> "कृपया केवल अक्षरों में नाम लिखें"
+  // Phone: 10 digits starting with 6-9 -> "10 अंकों का सही मोबाइल नंबर डालें (6-9 से शुरू)"
+  // ========================================================
+  const orderForm = document.getElementById('dentalOrderForm');
+  const nameInput = document.getElementById('userName');
+  const phoneInput = document.getElementById('userPhone');
+  const nameGroup = document.getElementById('nameGroup');
+  const phoneGroup = document.getElementById('phoneGroup');
+
+  if (orderForm && nameInput && phoneInput) {
+    // Validate Name: only letters (Hindi Devanagari or English) and spaces, length >= 2
+    const validateName = () => {
+      const val = nameInput.value.trim();
+      const nameRegex = /^[A-Za-z\u0900-\u097F\s]{2,50}$/;
+      if (!val || !nameRegex.test(val) || /\d/.test(val)) {
+        nameGroup.classList.add('has-error');
+        return false;
+      } else {
+        nameGroup.classList.remove('has-error');
+        return true;
+      }
+    };
+
+    // Validate Phone: must be exactly 10 digits starting with 6, 7, 8, or 9
+    const validatePhone = () => {
+      const val = phoneInput.value.trim();
+      const phoneRegex = /^[6-9]\d{9}$/;
+      if (!phoneRegex.test(val)) {
+        phoneGroup.classList.add('has-error');
+        return false;
+      } else {
+        phoneGroup.classList.remove('has-error');
+        return true;
+      }
+    };
+
+    // Real-time phone numeric filter (prevent non-digits)
+    phoneInput.addEventListener('input', () => {
+      phoneInput.value = phoneInput.value.replace(/\D/g, '').slice(0, 10);
+      if (phoneGroup.classList.contains('has-error')) {
+        validatePhone();
+      }
+    });
+
+    // Real-time name input handler
+    nameInput.addEventListener('input', () => {
+      if (nameGroup.classList.contains('has-error')) {
+        validateName();
+      }
+    });
+
+    // Validate on blur
+    nameInput.addEventListener('blur', () => {
+      if (nameInput.value.trim().length > 0) {
+        validateName();
+      }
+    });
+
+    phoneInput.addEventListener('blur', () => {
+      if (phoneInput.value.trim().length > 0) {
+        validatePhone();
+      }
+    });
+
+    // On Form Submit
+    orderForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const isNameValid = validateName();
+      const isPhoneValid = validatePhone();
+
+      if (!isNameValid) {
+        nameInput.focus();
+        return;
+      }
+
+      if (!isPhoneValid) {
+        phoneInput.focus();
+        return;
+      }
+
+      // Populate Thank You Modal
+      const enteredName = nameInput.value.trim();
+      const enteredPhone = phoneInput.value.trim();
+      const randomOrderId = 'DC-' + Math.floor(100000 + Math.random() * 900000);
+
+      const modalCustName = document.getElementById('modalCustName');
+      const modalCustPhone = document.getElementById('modalCustPhone');
+      const modalOrderId = document.getElementById('modalOrderId');
+      const thankyouModal = document.getElementById('thankyouModal');
+
+      if (modalCustName) modalCustName.textContent = enteredName;
+      if (modalCustPhone) modalCustPhone.textContent = '+91 ' + enteredPhone;
+      if (modalOrderId) modalOrderId.textContent = randomOrderId;
+
+      if (thankyouModal) {
+        thankyouModal.classList.add('is-active');
+        thankyouModal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+      }
+
+      orderForm.reset();
+      nameGroup.classList.remove('has-error');
+      phoneGroup.classList.remove('has-error');
+    });
+  }
+
+  // ========================================================
+  // THANK YOU MODAL CLOSE HANDLERS
+  // ========================================================
+  const thankyouModal = document.getElementById('thankyouModal');
+  const modalCloseBtn = document.getElementById('modalCloseBtn');
+  const modalConfirmBtn = document.getElementById('modalConfirmBtn');
+  const modalBackdrop = document.getElementById('modalBackdrop');
+
+  const closeModal = () => {
+    if (thankyouModal) {
+      thankyouModal.classList.remove('is-active');
+      thankyouModal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+  };
+
+  if (modalCloseBtn) modalCloseBtn.addEventListener('click', closeModal);
+  if (modalConfirmBtn) modalConfirmBtn.addEventListener('click', closeModal);
+  if (modalBackdrop) modalBackdrop.addEventListener('click', closeModal);
+
+  // Close on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && thankyouModal && thankyouModal.classList.contains('is-active')) {
+      closeModal();
+    }
+  });
+
+  // ========================================================
+  // SECTION 10: FAQ Accordion Toggle
+  // ========================================================
+  const faqItems = document.querySelectorAll('.faq-accordion-item');
+  faqItems.forEach((item) => {
+    const btn = item.querySelector('.faq-question-btn');
+    if (btn) {
+      btn.addEventListener('click', () => {
+        const isCurrentlyActive = item.classList.contains('active');
+        // Close other items
+        faqItems.forEach((other) => other.classList.remove('active'));
+        // Toggle current item
+        if (!isCurrentlyActive) {
+          item.classList.add('active');
+        }
+      });
+    }
+  });
 });
